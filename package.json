@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev":"nodemon server.js"
   },
+  "engines": {
+      "node": "4.2.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/byp100/No2BlueLivesOrdinance.git"

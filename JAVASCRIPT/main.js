@@ -9,9 +9,3 @@ var wardMatch = function(location) {
 		return false;
 	}
 }
-
-console.log(wardMatch({
-  "lat": 41.962087,
-  "lng": -87.670701,
-  "formatted": "4417 N Paulina St, Chicago, IL 60640"
-}));

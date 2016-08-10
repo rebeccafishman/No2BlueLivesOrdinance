@@ -13,6 +13,7 @@ var geocodio = new Geocodio(CONFIG.geocodio);
 		    	res.sendStatus(400);
 		    } else {
 			    var result = JSON.parse(response).results[0];
+			    console.log(result);
 		       	res.send({
 		       		lat:result.location.lat,
 		       		lng:result.location.lng,

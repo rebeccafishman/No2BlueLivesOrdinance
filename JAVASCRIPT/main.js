@@ -28,6 +28,6 @@ var addressSearch = function() {
 	  }
 	};
 
-	xhttp.open("GET", "http://bluestlie.herokuapp.com/v1/address?a=4417%20N.%20Paulina%20St.%20Chicago%2C%20IL", true);
+	xhttp.open("GET", "http://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(address), true);
 	xhttp.send();
 };

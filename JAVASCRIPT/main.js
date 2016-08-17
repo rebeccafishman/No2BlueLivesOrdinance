@@ -46,6 +46,6 @@ var addressSearch = function() {
 	  }
 	};
 
-	xhttp.open("GET", "http://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(address), true);
+	xhttp.open("GET", "//bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(address), true);
 	xhttp.send();
 };

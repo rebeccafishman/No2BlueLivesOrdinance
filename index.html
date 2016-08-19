@@ -70,6 +70,16 @@
 						<h2>Call Your Alderman</h2>
 						<section id="lead"></section>
 						<h3>Find your Alderman</h3>
+						<!--Display Alderman Information-->
+						<div id="alderman-profile" class=" ">
+							<h4 id="alderman-name"></h4>
+							<h5 id="skew">Ward <span id="alderman-ward"></span></h5>
+							<h5>Phone: <span id="alderman-phone"></span></h5>
+							<p>This information is for the address you entered (<span id="formatted-address">161 E Chicago Ave, Chicago, IL 60611</span>). If it seems incorrect or this is not the address you were searching for, please try again:</p>
+						</div>
+						<div id="alderman-err" class="hidden">
+							<p>Sorry, there was a problem with the address you entered. Please enter a full street address below and try searching again.</p>
+						</div>
 						<ul>
 							<li>
 								<form id="address" onsubmit="yrAlder()" action="server.js"> 

@@ -48,3 +48,43 @@ var addressSearch = function() {
 	xhttp.open("GET", "https://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(address), true);
 	xhttp.send();
 };
+
+var addressMobile = function() {
+	event.preventDefault();
+	var addressMob = document.getElementById('mob_address').elements['mob-input'].value;
+
+	var xhttp;
+	if (window.XMLHttpRequest) {
+		    xhttp = new XMLHttpRequest();
+	    } else {
+		    // code for IE6, IE5
+		    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+
+	xhttp.onreadystatechange = function() {
+	  if (xhttp.readyState < 4) {
+	  	document.getElementById('mob-input').disabled=true;
+	  	document.getElementById('mob-submit').disabled=true;
+	  } else if (xhttp.readyState == 4) {
+	  	document.getElementById('mob-input').disabled=false;
+	  	document.getElementById('mob-submit').disabled=false;
+	  }
+	  if (xhttp.readyState == 4 && xhttp.status == 200) {
+	    console.log(wardMatch(JSON.parse(xhttp.responseText)));
+	    var ward = wardMatch(JSON.parse(xhttp.responseText));
+	    document.getElementById('mob-address').innerHTML = ward.normAddress;
+	    document.getElementById('mob-name').innerHTML = ward.ward.council_member;
+	    document.getElementById('mob-phone').innerHTML = ward.ward.phone;
+	    document.getElementById('mob-ward').innerHTML = ward.ward.ward;
+	    document.getElementById('mob-profile').setAttribute('class', '');
+	    document.getElementById('mob-err').setAttribute('class', 'hidden');
+	  } else if (xhttp.readyState == 4 && xhttp.status >= 300){
+
+	  	document.getElementById('mob-profile').setAttribute('class', 'hidden');
+	  	document.getElementById('mob-err').setAttribute('class', '');
+	  }
+	};
+
+	xhttp.open("GET", "https://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(mob_address), true);
+	xhttp.send();
+};

@@ -12,7 +12,7 @@ var wardMatch = function(location) {
 //Code with Class [0] and [1]
 var addressSearch = function() {
 	event.preventDefault();
-	var address = document.getElementById[0]('address').elements['address-input'].value;
+	var address = document.getElementById('address').elements['address-input'].value;
 
 	var xhttp;
 	if (window.XMLHttpRequest) {

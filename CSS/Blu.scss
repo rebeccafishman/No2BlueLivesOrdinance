@@ -168,18 +168,19 @@ body {
 		#dia {
 			width: 100%;
 			margin-bottom: 100px;
+			height: 870px;
 
 			h3 {
 				font-size: 1.6em;
 			}
 		}
 	}
-	@media screen and (max-width: 780px) {
+	@media screen and (max-width: 790px) {
 		#dia {
-			height: 900px
+			height: 1000px
 		}
 	}
-	@media screen and (max-width: 435px) {
+	@media screen and (max-width: 485px) {
 		#dia {
 			margin-bottom: 150px;
 		}
@@ -353,8 +354,7 @@ body {
 			.hidden {
 				display: none;
 			}
-			.alderman-profile {
-				//display: block;
+			#alderman-profile {
 				font-family: Arial;
 				font-size: 1em;
 				background-color: $White;
@@ -365,7 +365,7 @@ body {
 				margin-bottom: 5%;
 				margin-top: -5%;
 
-				.alderman-name {
+				#alderman-name {
 					background-color: $Black;
 					color: $White;
 					border-bottom: solid 1px $White; 
@@ -379,18 +379,16 @@ body {
 				#skew {
 					color: $Black;
 					background-color: transparent;
-					//padding-top: 10px;
 					margin-top: -20px;
 					padding-left: 5%;
 					font-size: 1.1em;
 					position: relative;
 					z-index: 1;
 
-					.alderman-ward {
+					#alderman-ward {
 						color: $Black;
 						position: relative;
 						z-index: 1;
-						//background-color: $Blue;
 					}
 				}
 				#skew::before {
@@ -412,7 +410,7 @@ body {
 					position: relative;
 					z-index: 1;
 
-					.alderman-phone {
+					#alderman-phone {
 					
 					}
 				}
@@ -422,13 +420,12 @@ body {
 					font-size: .9em;
 					padding-bottom: 2%;
 
-					.formatted-address {
+					#formatted-address {
 
 					}
 				}
 			}
-			.alderman-err {
-				//display: block;
+			#alderman-err {
 				font-family: Arial;
 
 				p {
@@ -578,8 +575,7 @@ body {
 			display: none;
 		}
 
-		.alderman-profile {
-			//display: block;
+		#mob-profile {
 			font-family: Arial;
 			font-size: 1em;
 			background-color: $White;
@@ -588,9 +584,10 @@ body {
 			border-right: solid 1px $Black;
 			border-bottom: solid 1px $Black;
 			margin-bottom: 5%;
-			margin-top: -5%;
+			width: 80%;
+			max-width: 500px;
 
-			.alderman-name {
+			#mob-name {
 				background-color: $Black;
 				color: $White;
 				border-bottom: solid 1px $White; 
@@ -601,32 +598,31 @@ body {
 				position: relative;
 				z-index: 2;
 			}
-			#skew {
+			#mob-skew {
 				color: $Black;
 				background-color: transparent;
-				//padding-top: 10px;
-				margin-top: -20px;
+				margin-top: 0px;
 				padding-left: 5%;
 				font-size: 1.1em;
 				position: relative;
 				z-index: 1;
 
-				.alderman-ward {
+				#mob-ward {
 					color: $Black;
 					position: relative;
 					z-index: 1;
 				}
 			}
-			#skew::before {
+			#mob-skew::before {
 				content: "  ";
 				background-color: $Blue;
 				width: 100%;
 				position: absolute;
 				z-index: -1;
-				height: 40px;
+				height: 60px;
 				margin-left: -5%;
 				transform: skewY(-3deg);
-				margin-top: -20px;
+				margin-top: -50px;
 			}
 			h5:nth-of-type(2) {
 				margin-left: 5%;
@@ -636,7 +632,7 @@ body {
 				position: relative;
 				z-index: 1;
 
-				.alderman-phone {
+				#mob-phone {
 					
 				}
 			}	
@@ -646,14 +642,15 @@ body {
 				font-size: .9em;
 				padding-bottom: 2%;
 
-				.formatted-address {
+				#mob-address {
 
 				}
 			}
 		}
-		.alderman-err {
-			//display: block;
+		#mob-err {
 			font-family: Arial;
+			width: 80%;
+			max-width: 500px;
 
 			p {
 				font-size: 1.1em;
@@ -667,7 +664,7 @@ body {
 			float: right;
 			margin: 0%;
 			position: relative;
-			z-index: 2;
+			z-index: 3;
 
 			li {
 				display: block;
@@ -697,18 +694,12 @@ body {
 					.button {
 						float: right;
 						border-radius: 10px;
-						height: 18px;
-						float: right;
-					}
-					.button {
-						float: right;
-						border-radius: 10px;
 						height: 20px;
 						font-family: Courier;
 						color: $Blue;
 						background-color: $White;
 						font-weight: bold;
-						border: none;
+						border: solid 2px $Blue;
 						clear: both;
 						font-family: Arial-Black;
 					}

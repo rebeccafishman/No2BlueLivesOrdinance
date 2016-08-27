@@ -11,6 +11,8 @@ var wardMatch = function(location) {
 }
 
 var addressSearch = function() {
+	var loadingdiv = document.getElementById('loading');
+	loadingdiv.style.display = "block";
 	event.preventDefault();
 	var address = document.getElementById('address').elements['address-input'].value;
 
@@ -48,9 +50,13 @@ var addressSearch = function() {
 
 	xhttp.open("GET", "https://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(address), true);
 	xhttp.send();
+	
+	loadingdiv.style.display = "none";
 };
 
 var addressMobile = function() {
+	var loadingMob = document.getElementById('mob_loading');
+	loadingMob.style.display = "block";
 	event.preventDefault();
 	var addressMob = document.getElementById('mob_address').elements['mob-input'].value;
 	console.log(addressMob);
@@ -89,4 +95,7 @@ var addressMobile = function() {
 
 	xhttp.open("GET", "https://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(addressMob), true);
 	xhttp.send();
+	
+	var loadingMob = document.getElementById('mob_loading');
+	loadingMob.style.display = "none";
 };

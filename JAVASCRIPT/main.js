@@ -52,7 +52,7 @@ var addressSearch = function() {
 	  	var loadingdiv = document.getElementById('loading');
 		loadingdiv.style.display = "block";
 	  }
-	  else {
+	  else if (xhttp.readyState == 4 ){
 	  	var loadingdiv = document.getElementById('loading');
 		loadingdiv.style.display = "none";
 	  }
@@ -99,15 +99,15 @@ var addressMobile = function() {
 	  	document.getElementById('mob-err').setAttribute('class', '');
 	  }
 	  if (xhttp.readyState == 0){
-	  	var loadingdiv = document.getElementById('loading');
+	  	var loadingdiv = document.getElementById('mob_loading');
 		loadingdiv.style.display = "none";	
 	  }
 	  else if (xhttp.readyState > 0) {
-	  	var loadingdiv = document.getElementById('loading');
+	  	var loadingdiv = document.getElementById('mob_loading');
 		loadingdiv.style.display = "block";
 	  }
-	  else {
-	  	var loadingdiv = document.getElementById('loading');
+	  else if (xhttp.readyState == 4 ) {
+	  	var loadingdiv = document.getElementById('mob_loading');
 		loadingdiv.style.display = "none";
 	  }
 	};

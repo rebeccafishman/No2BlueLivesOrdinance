@@ -48,7 +48,7 @@ var addressSearch = function() {
 	  	var loadingdiv = document.getElementById('loading');
 		loadingdiv.style.display = "none";	
 	  }
-	  else if (xhttp.readyState > 0) {
+	  else if (xhttp.readyState > 0 && xhttp.readyState < 4) {
 	  	var loadingdiv = document.getElementById('loading');
 		loadingdiv.style.display = "block";
 	  }
@@ -102,7 +102,7 @@ var addressMobile = function() {
 	  	var loadingdiv = document.getElementById('mob_loading');
 		loadingdiv.style.display = "none";	
 	  }
-	  else if (xhttp.readyState > 0) {
+	  else if (xhttp.readyState > 0 && xhttp.readyState < 4) {
 	  	var loadingdiv = document.getElementById('mob_loading');
 		loadingdiv.style.display = "block";
 	  }

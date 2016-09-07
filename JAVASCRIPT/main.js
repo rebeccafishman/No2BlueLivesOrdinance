@@ -90,6 +90,7 @@ var addressMobile = function() {
 	    document.getElementById('mob-address').innerHTML = ward.normAddress;
 	    document.getElementById('mob-name').innerHTML = ward.ward.council_member;
 	    document.getElementById('mob-phone').innerHTML = ward.ward.phone;
+	    document.getElementById('mob-phone').setAttribute('href', 'tel:\/\/' + ward.ward.phone);
 	    document.getElementById('mob-ward').innerHTML = ward.ward.ward;
 	    document.getElementById('mob-profile').setAttribute('class', '');
 	    document.getElementById('mob-err').setAttribute('class', 'hidden');

@@ -454,6 +454,9 @@ body {
         margin-left: -5%;
         transform: skewY(-3deg);
         margin-top: -50px; }
+      #content #mob_call #mob-profile #script {
+        display: none;
+      }
       #content #mob_call #mob-profile #script #hidden {
         display: none;
         font-size: 2em;

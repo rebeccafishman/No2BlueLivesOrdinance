@@ -8,8 +8,8 @@
     "start-dev": "nodemon server.js"
   },
   "engines": {
-      "node": "4.2.2",
-      "npm": "2.14.7"
+    "node": "4.2.2",
+    "npm": "2.14.7"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "config": "1.x",
     "express": "4.x",
     "geocodio": "^2.0.0",
+    "mongoose": "^4.6.0",
     "parse-address": "0.0.5"
   },
   "devDependencies": {},

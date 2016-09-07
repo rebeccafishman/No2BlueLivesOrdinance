@@ -10,4 +10,8 @@ config.BASE.geocodio = {
 	api_key: process.env.GEOCODIO_KEY
 }
 
+config.BASE.mongo = {
+	uri: process.env.MONGODB_URI
+}
+
 module.exports = config;

@@ -5,10 +5,17 @@ var geocodio = new Geocodio(CONFIG.geocodio);
 
 var parser = require('parse-address');
 
+
+var mongoose = require('mongoose');
+var models = require('../../../models');
+var db = mongoose.connect(CONFIG.mongo.uri);
+
 (function() {
     module.exports = {
        address: function ( req, res ) {
 			var address = parser.parseLocation(req.query.a);
+			var log = new models.addressSearch();
+			log.request.addr = address;
 
 			if (address.number) {
 				var geocodioAddress = address.number;
@@ -26,12 +33,18 @@ var parser = require('parse-address');
 				    	res.sendStatus(400, err);
 				    } else {
 					    var result = JSON.parse(response).results[0];
-
-				       	res.send({
+				    	var responsePayload = {
 				       		lat:result.location.lat,
 				       		lng:result.location.lng,
 				       		formatted:result.formatted_address
-				       	});
+				       	}
+
+				       	log.response = responsePayload;
+				       	console.log(log);
+				       	log.save(function(err, record){
+				       		console.log(err, record);
+				       	})
+				       	res.send(responsePayload);
 				    }
 				});
 

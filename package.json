@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev":"nodemon server.js"
+    "start-dev": "nodemon server.js"
   },
   "engines": {
       "node": "4.2.2",
@@ -24,7 +24,8 @@
     "cluster": "^0.7.7",
     "config": "1.x",
     "express": "4.x",
-    "geocodio": "^2.0.0"
+    "geocodio": "^2.0.0",
+    "parse-address": "0.0.5"
   },
   "devDependencies": {},
   "homepage": "https://github.com/byp100/No2BlueLivesOrdinance#readme"

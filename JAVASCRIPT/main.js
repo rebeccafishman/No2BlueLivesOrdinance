@@ -124,16 +124,15 @@ var windowScript = document.getElementById("in_box");
 var getScript = document.getElementById("visible");
 
 var remove = function() {
-			windowScript_mob.style.display = "none";
-			getScript_mob.style.display = "block";
-			windowScript.style.display = "none";
-			getScript.style.display = "block";
-
+	windowScript_mob.style.display = "none";
+	getScript_mob.style.display = "block";
+	windowScript.style.display = "none";
+	getScript.style.display = "block";
 };
 
 var appear = function() {
-			windowScript_mob.style.display = "block";
-			getScript_mob.style.display = "none";
-			windowScript.style.display = "block";
-			getScript.style.display = "none";
+	windowScript_mob.style.display = "block";
+	getScript_mob.style.display = "none";
+	windowScript.style.display = "block";
+	getScript.style.display = "none";
 };

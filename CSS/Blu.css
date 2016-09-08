@@ -323,7 +323,7 @@ body {
         padding: 2%; }
       #content .columns #action #script #visible:hover {
         cursor: pointer;
-        background-color: #fbfbfb; }
+        color: #009bed; }
       #content .columns #action #script #in_box {
         background-color: #fbfbfb;
         position: absolute;
@@ -539,7 +539,7 @@ body {
         padding: 2%; }
       #content #mob_call #mob_script #mob_visible:hover {
         cursor: pointer;
-        background-color: #fbfbfb; }
+        color: #009bed; }
       #content #mob_call #mob_script #mob_in_box {
         background-color: #fbfbfb;
         position: absolute;

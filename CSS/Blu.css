@@ -308,7 +308,7 @@ body {
       #content .columns #action #alderman-err p {
         font-size: 1.1em; }
     #content .columns #action #script {
-      float: left; }
+       }
       #content .columns #action #script #visible {
         display: block;
         font-size: 1.2em;
@@ -524,7 +524,7 @@ body {
       #content #mob_call #mob-err p {
         font-size: 1.1em; }
     #content #mob_call #mob_script {
-      float: left; }
+       }
       #content #mob_call #mob_script #mob_visible {
         display: block;
         font-size: 1.2em;

@@ -113,7 +113,7 @@ var addressMobile = function() {
 	  }
 	};
 
-	xhttp.open("GET", "https://bluestlie.herokuapp.com/v1/address?a=" + encodeURIComponent(addressMob), true);
+	xhttp.open("GET", "https://chi-calls-rr.herokuapp.com/v1/address?a=" + encodeURIComponent(addressMob), true);
 	xhttp.send();
 
 };

@@ -1,6 +1,6 @@
 ---
 title: "About ChiCalls"
 layout: page
-permalink: "/about"
+permalink: "about"
 ---
 Hey, some about stuff

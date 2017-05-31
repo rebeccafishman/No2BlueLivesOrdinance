@@ -1,0 +1,9 @@
+title: ChiCalls
+baseurl: "" # the subpath of your site, e.g. /blog
+
+theme_color: "#ffffff"
+
+# Build settings
+markdown: kramdown
+
+include: ["_pages"]

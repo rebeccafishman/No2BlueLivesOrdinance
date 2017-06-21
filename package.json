@@ -1,0 +1,24 @@
+{
+  "name": "chi-calls-ii",
+  "version": "1.0.0",
+  "description": "This project is designed to be hosted as follows:",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncmine13/chi-calls-ii.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ncmine13/chi-calls-ii/issues"
+  },
+  "homepage": "https://github.com/ncmine13/chi-calls-ii#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

@@ -1,4 +1,13 @@
 title: ChiCalls
+collections:
+    wards:
+        output: true
+        permalink: /:collection/:name
+        layout: alderman
+    issues:
+        output: true
+        permalink: /:collection/:name
+
 baseurl: "" # the subpath of your site, e.g. /blog
 
 theme_color: "#ffffff"

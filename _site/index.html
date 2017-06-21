@@ -1,0 +1,113 @@
+<html>
+<head>
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="site" />
+	<meta property="og:title" content="ChiCalls" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+	<div class="col-xs-12">
+		<h1>ChiCalls</h1>
+	</div>
+</div>
+		<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<ul class="nav navbar-nav">
+				
+	        	<li>
+	        		<a href=""></a>
+	        	</li>
+	        	
+	        </ul>
+		</div>
+	</div>
+</nav>
+<div class="row">
+	<div class="col-xs-12">
+		<p>Hello! Welcome to the ChiCalls breakout group.  We have created this document to go over some of the more basic aspects of this project to catch up people who are new, so you can jump right in!</p>
+
+<p>To get a better understanding of what we are aiming to do with our site, please visit https://5calls.org or http://thebluestlie.com.</p>
+
+<p>Functionality
+The format of the site will be very similar to 5calls but with a focus on Chicago rather than state or national issues.  Website users will enter their address. They will receive their alderman’s contact info and a selection of issues that they can click on depending on what cause interests them. After selecting their issue, they will be provided with  ward-specific and city-wide calls to action and/or suggested scripts.<br />
+Example: Calling your alderman about CPAC if you support police accountability. 
+Example: Calling your alderman who’s on the zoning committee for the affordable housing project in Jefferson Park. 
+Example: Calling the mayor about funding CPS.</p>
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div id="action">
+	<h2>Call Your Alderman</h2>
+	<section id="lead"></section>
+	<h3>Find your Alderman</h3>
+	<!--Display Alderman Information / second addressSearch() call-->
+	<div id="alderman-profile" class="hidden">
+		<h4 id="alderman-name"></h4>
+		<h5 id="skew">Ward <span id="alderman-ward"></span></h5>
+		<h5>Phone: <span id="alderman-phone"></span></h5>
+		<p>This information is for the address you entered (<span id="formatted-address"></span>). If it seems incorrect or this is not the address you were searching for, please try again:</p>
+		<section id="script">
+			<a id="visible" onclick="appear()">Use Call Script</a>
+			<section id="in_box">
+				<a id="hidden" href="javascript:0" onclick="remove()">X</a>
+				<div>
+					<h5>Dear Alderman ___________,</h5>
+					<p>My name is _____________________. I am a concerned about ordinance 4878, also referred to as the Blue Lives Matter bill. If passed, this ordinance would provide police the opportunity to punish people speaking out against police brutality. This is a violation of our freedom of speech. This ordinance is also problematic because enables police to terrorize and silence people in marginalized communities.</p>
+					<p>People of Chicago want to know where do you stand on this ordinance? Are you in favor of it or are you opposed to this ordinance?</p>
+					<a href="http://bit.ly/CallAlderman">Tell us what they said</a>
+				</div>
+			</section>
+		</section>
+	</div>
+	<div id="alderman-err" class="hidden">
+		<p>Sorry, there was a problem with the address you entered. Please enter a full street address below and try searching again.</p>
+	</div>
+	
+	<ul>
+		<li>
+			<form id="address" onsubmit="addressSearch(this);"> 
+				<label for="Address">Address</label>
+				<input id="address-input" type="text" class="d_input search-control" required>
+				<input id="address-submit" type="submit" value="Submit" class="button search-control">
+			</form>
+		</li>
+	</ul>
+	<div id='can-petition-area-thebluestlie-rescind-the-blues-lives-chicago-ordinance'><!-- this div is the target for our HTML insertion --></div>
+</div>
+	</div>
+</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script type="text/javascript" src="JAVASCRIPT/leaflet.js"></script>
+	<script type="text/javascript" src="JAVASCRIPT/leaflet-pip.min.js"></script>
+	<script type="text/javascript" src="JAVASCRIPT/wards.js"></script>
+	<script type="text/javascript" src="JAVASCRIPT/main.js"></script>
+
+</body>
+</html>

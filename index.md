@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 layout: frontpage
 title: "Welcome"
 permalink: "/"
@@ -13,3 +14,17 @@ XOXO readymade celiac bitters leggings. Af single-origin coffee banjo crucifix b
 Williamsburg kombucha poke single-origin coffee, authentic blue bottle stumptown pickled shaman poutine. Cold-pressed lumbersexual whatever +1 celiac, keytar banjo vegan 8-bit hot chicken ugh bespoke chartreuse cloud bread copper mug. Schlitz af blog plaid coloring book. 8-bit fashion axe next level, tote bag keytar VHS man bun pitchfork vexillologist hell of gochujang kitsch. Palo santo leggings cronut lumbersexual shabby chic af. Vice put a bird on it fingerstache, twee knausgaard woke chia vaporware gentrify. Marfa portland raclette banh mi gluten-free 90's. Poutine salvia chambray thundercats gastropub tote bag. Street art lumbersexual before they sold out mixtape messenger bag unicorn VHS ethical retro tote bag chillwave marfa PBR&B. DIY direct trade gastropub cloud bread pork belly artisan hammock 3 wolf moon. Flannel vaporware franzen before they sold out messenger bag hoodie scenester raclette pop-up live-edge affogato intelligentsia pok pok pug disrupt. Normcore helvetica williamsburg before they sold out. Man bun YOLO letterpress shoreditch, succulents paleo viral kickstarter heirloom freegan pug keytar ugh cloud bread pork belly.
 
 Bicycle rights trust fund lo-fi, fanny pack seitan pickled keffiyeh polaroid. Microdosing portland glossier woke man bun waistcoat live-edge letterpress keytar. Plaid vice crucifix, wayfarers readymade ugh put a bird on it. Polaroid portland quinoa master cleanse ramps synth truffaut chartreuse asymmetrical lo-fi occupy roof party. Edison bulb chartreuse gochujang kickstarter salvia lomo flannel umami letterpress vinyl before they sold out viral pabst. Mixtape master cleanse pabst polaroid XOXO, occupy offal shaman kogi vegan. Gastropub gochujang mustache, celiac affogato kickstarter hell of keytar four loko. Kitsch marfa hella ethical twee. Vinyl franzen chillwave small batch, hell of shoreditch intelligentsia knausgaard hella single-origin coffee post-ironic mustache.
+=======
+layout: front_page
+---
+
+Hello! Welcome to the ChiCalls breakout group.  We have created this document to go over some of the more basic aspects of this project to catch up people who are new, so you can jump right in!
+ 
+To get a better understanding of what we are aiming to do with our site, please visit https://5calls.org or http://thebluestlie.com.
+ 
+Functionality
+The format of the site will be very similar to 5calls but with a focus on Chicago rather than state or national issues.  Website users will enter their address. They will receive their alderman’s contact info and a selection of issues that they can click on depending on what cause interests them. After selecting their issue, they will be provided with  ward-specific and city-wide calls to action and/or suggested scripts.  
+Example: Calling your alderman about CPAC if you support police accountability. 
+Example: Calling your alderman who’s on the zoning committee for the affordable housing project in Jefferson Park. 
+Example: Calling the mayor about funding CPS.
+>>>>>>> gh-pages

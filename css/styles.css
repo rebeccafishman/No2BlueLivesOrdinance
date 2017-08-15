@@ -1,6 +1,9 @@
 #logo {
   width: 500px;
 }
+body .mainContainer {
+  background-color: #F0F8FF;
+}
 body .mainContainer .header div h1 {
   font-size: 60px;
 }
@@ -32,4 +35,18 @@ body .issueRow {
 }
 body .issueRow .issueList {
   text-align: left;
+}
+body h1 {
+  color: #696969;
+  text-align: center;
+}
+body p1 {
+  color: #FE5A5A;
+  font-family: verdana;
+  font-size: 20px;
+}
+body p2 {
+  color: skyblue;
+  font-family: verdana;
+  font-size: 15px;
 }

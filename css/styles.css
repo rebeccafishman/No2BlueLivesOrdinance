@@ -1,5 +1,6 @@
 body .mainContainer {
   background-color: #F0F8FF;
+  border: 1px solid #000;
 }
 body .mainContainer .header div h1 {
   font-size: 60px;
